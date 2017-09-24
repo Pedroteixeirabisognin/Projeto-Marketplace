@@ -1,0 +1,56 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+
+    background-image: url(../img/background.jpg);
+    color: white;
+
+}
+
+#conteiner-pesquisa{
+
+	height: 300px;
+
+}
+#botao-pesquisa{
+
+	color: black;
+	background-color: #FFFFFF;
+	width: 50px;
+
+}
+#rodape{
+
+	background: black;
+
+
+}
+#conteudo{
+	padding: auto;
+	background: white;
+	color: black;
+	height: 100%;
+	margin: auto;
+
+}
+.row{
+	margin: 0px;
+
+}
+.jumbotron {
+   background: rgb(0, 0, 0); /* This is for ie8 and below */
+   background: rgba(0, 0, 0, 0.5); 
+   margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
