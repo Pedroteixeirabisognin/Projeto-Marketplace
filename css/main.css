@@ -5,8 +5,12 @@
    ========================================================================== */
 body{
 
-    background-image: url(../img/background.jpg);
-    color: white;
+  background: url('../img/background.jpg') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 
 }
 
@@ -23,9 +27,6 @@ body{
 
 }
 #rodape{
-
-	background: black;
-
 
 }
 #conteudo{
@@ -53,8 +54,26 @@ body{
 	padding-bottom: 20px;
 	color: black;
 }
+@media screen and (min-width: 767px) {
+ 
+.pesquisa{
 
+	width: 500px; 
+	margin-left: auto; 
+	margin-right: auto;
 
+}
+}
+@media screen and (max-width: 350px) {
+ 
+.pesquisa{
+
+	width: 100px; 
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+}
 
 
 

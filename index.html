@@ -46,7 +46,8 @@
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+            <button type="submit" class="btn btn-success">Logar</button>
+            <button type="button" class="btn btn-info">Cadastrar-se</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -57,14 +58,14 @@
       <section id="pesquisa">
         <div class="container">
           <div class="row">
-            <div class="col-md-12" style="border: 1px solid red;">
+            <div class="col-md-12" >
 
               <span>
               <h2 align="center" style="padding-top: 100px; padding-bottom: 40px;">Encontre, inove, compre e venda!</h2>
               </span>
               <span>
                 <form name="frmBusca" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?a=buscar" style="padding-bottom: 300px;" >
-                <input type="text" class="form-control pesquisa" placeholder="Pesquise" name="palavra">
+                <input  type="text" class="form-control pesquisa" placeholder="Pesquise" name="palavra">
                 </form>
               </span>
             </div>
@@ -77,12 +78,12 @@
           <div class="row">
 
             <!--Imagem-->
-            <div class="col-md-6" style="border: 1px solid red;">
+            <div class="col-md-6" >
               <img class="img-responsive" src="img/light-bulb-icon_34400.png">
             </div>
 
             <!--Texto-->
-            <div class="col-md-6" style="border: 1px solid red;">
+            <div class="col-md-6" ">
               <span>
                 <h2>O que é o Invector?</h2>
                 <p>Um site onde você poderá divulgar suas patentes para qualquer investidor interessado.</p>
@@ -101,10 +102,48 @@
           </div>
 
         </div>
-
-
       </section>
-    
+      <footer id="rodape">
+        <div class="container">
+          <div class="row">
+
+            <!--Imagem Rodapé-->           
+            <div class="col-md-4" >
+             <img class="img-responsive" src="img/light-bulb-icon_34400.png">
+            </div>
+
+            <!--Texto-->
+            <div class="col-md-8" >
+              <div class="col-md-6" style="padding-top: 100px;">
+
+                <h2>Sobre a empresa</h2>
+
+                <ul>
+                  <li>Endereço: XXXXXXXXX</li>
+                  <li>Telefone: (XX) XXXXX - XXXX</li>
+                </ul>  
+
+              </div>
+              <div class="col-md-6" style="padding-top: 100px;">
+
+                <h2>Links úteis</h2>
+
+                <ul>
+                  <li><a href="http://www.inpi.gov.br/">INPI</a></li>
+                  <li><a href="www.facebook.com">Facebook</a></li>
+                </ul>  
+
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>        
+
+
+
+      </footer>    
 
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
