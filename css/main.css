@@ -45,7 +45,14 @@ body{
    background: rgba(0, 0, 0, 0.5); 
    margin-bottom: 0px;
 }
+/*---Seção serviços---*/
+#servicos{
 
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: black;
+}
 
 
 
