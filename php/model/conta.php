@@ -1,5 +1,10 @@
 <?php
 
+/**
+* 
+*/
+class Conta
+{
 
  $login = $_POST['login'];
 
@@ -7,7 +12,52 @@
 
  $email = $_POST['email'];
 
+	
+	function __construct(argument)
+	{
+		# code...
+	}
+	//=====SETS===========//
+	function setLogin($login){
+		$this->login = $login;
 
+	}
+
+	function setSenha($senha){
+		$this->senha = $senha;
+
+
+	}
+
+	function setEmail($email){
+		$this->email = $email;
+
+
+	}
+	
+
+	//=====GETS===========//
+	function getLogin($Login){
+		return $this->login;
+
+	}
+
+	function getSenha($senha){
+		return $this->senha;
+
+	}
+
+	function getEmail($email){
+		return $this->email;
+
+	}
+
+}
+
+
+
+//conexão com o banco
+/*
  print"$login $senha $email";
 
 
@@ -30,6 +80,6 @@ mysqli_close($link);
 echo "Cliente cadastrado com sucesso!";
 mysqli_close($link);
 
-
+*/
 
 ?>
