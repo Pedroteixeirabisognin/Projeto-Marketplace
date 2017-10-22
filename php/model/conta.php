@@ -3,83 +3,46 @@
 /**
 * 
 */
+//Nome da classe
 class Conta
 {
-
- $login = $_POST['login'];
-
- $senha = $_POST['senha'];
-
- $email = $_POST['email'];
-
-	
-	function __construct(argument)
-	{
-		# code...
-	}
-	//=====SETS===========//
-	function setLogin($login){
-		$this->login = $login;
+	//Não permite editar as variáves fora da classe
+  	private $login; 
+  	private $senha; 
+  	private $email; 
+  	
+  	//Método construtor, não precisa colocar o mesmo nome como no java
+	function __construct($parametro_Login,$parametro_senha,$parametro_email){
+		
+		$this->login = $parametro_Login;
+		$this->senha = $parametro_senha;
+		$this->email = $parametro_email;
 
 	}
 
-	function setSenha($senha){
-		$this->senha = $senha;
+	//Métodos get para retorno do valor da variável
+	public function getLogin(){
 
-
-	}
-
-	function setEmail($email){
-		$this->email = $email;
-
-
-	}
-	
-
-	//=====GETS===========//
-	function getLogin($Login){
 		return $this->login;
 
 	}
+	public function getSenha(){
 
-	function getSenha($senha){
 		return $this->senha;
 
 	}
+	public function getEmail(){
 
-	function getEmail($email){
 		return $this->email;
 
 	}
+}//Fim da classe//
 
-}
+//Instanciando a classe conta e recebendo os valores do form index.html
+$conta = new Conta($_POST['login'],$_POST['senha'],$_POST['email']);
 
+//Print dos valores para teste
+echo 'Essa é sua conta: '.$conta->getLogin().' essa é sua senha: '.$conta->getSenha().' esse é seu email: '.$conta->getEmail();
 
-
-//conexão com o banco
-/*
- print"$login $senha $email";
-
-
-
-$link = mysqli_connect("localhost", "root", "", "tcc");
- 
-if (!$link) {
-    echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
- 
-echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL." . PHP_EOL;
-
-$sql = "INSERT INTO conta VALUES ";
-$sql .= "(1,1,'$login', '$senha', '$email')"; 
-mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
-mysqli_close($link);
-echo "Cliente cadastrado com sucesso!";
-mysqli_close($link);
-
-*/
 
 ?>
