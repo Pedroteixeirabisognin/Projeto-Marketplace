@@ -42,7 +42,7 @@ class Conta
 $conta = new Conta($_POST['login'],$_POST['senha'],$_POST['email']);
 
 //Print dos valores para teste
-echo 'Essa é sua conta: '.$conta->getLogin().' essa é sua senha: '.$conta->getSenha().' esse é seu email: '.$conta->getEmail();
+//echo 'Essa é sua conta: '.$conta->getLogin().' essa é sua senha: '.$conta->getSenha().' esse é seu email: '.$conta->getEmail();
 
 
 ?>

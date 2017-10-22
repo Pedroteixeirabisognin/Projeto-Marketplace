@@ -68,7 +68,7 @@
                 <h4 class="modal-title">Cadastro</h4>
               </div>
               <div class="modal-body">
-                <form action="php/model/conta.php" method="post">
+                <form action="php/dao/dao_conta.php" method="post">
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nome</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" required placeholder="Nome" name="login">
