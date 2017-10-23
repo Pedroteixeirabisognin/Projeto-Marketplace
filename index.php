@@ -1,3 +1,11 @@
+<?php
+
+  //Verifica se existe algo na variável
+  $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+
+
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -40,15 +48,21 @@
           <a class="navbar-brand" href="index.html">Invector</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
+          <form method="post" action="php/dao/verificar_login.php" class="navbar-form navbar-right" role="form">
             <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+              <input type="text" placeholder="Login" class="form-control" required  name="login_verifica">
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <input type="password" placeholder="Password" class="form-control" required placeholder="Password" name="senha_verifica">
             </div>
             <button type="submit" class="btn btn-success">Logar</button>
             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Cadastre-se</button>
+            <?php
+              if ($erro == 1) {
+                echo "Usuário ou senha inválido(s)";
+              }
+
+            ?>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -68,7 +82,7 @@
                 <h4 class="modal-title">Cadastro</h4>
               </div>
               <div class="modal-body">
-                <form action="php/dao/dao_conta.php" method="post">
+                <form action="php/dao/dao_conta_cadastro.php" method="post">
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nome</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" required placeholder="Nome" name="login">

@@ -6,6 +6,7 @@
 //Nome da classe
 class Conta
 {
+
 	//Não permite editar as variáves fora da classe
   	private $login; 
   	private $senha; 
@@ -39,7 +40,7 @@ class Conta
 }//Fim da classe//
 
 //Instanciando a classe conta e recebendo os valores do form index.html
-$conta = new Conta($_POST['login'],$_POST['senha'],$_POST['email']);
+//$conta = new Conta($_POST['login'],$_POST['senha'],$_POST['email']);
 
 //Print dos valores para teste
 //echo 'Essa é sua conta: '.$conta->getLogin().' essa é sua senha: '.$conta->getSenha().' esse é seu email: '.$conta->getEmail();

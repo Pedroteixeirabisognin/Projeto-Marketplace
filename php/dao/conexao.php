@@ -1,4 +1,8 @@
 <?php
+
+	include_once("../model/conta.php"); 
+
+
 /**
 * 
 */
@@ -11,10 +15,10 @@ class conexao
 
 	private $database = 'tcc';
 
-	function Conecta_Mysql(){
+	function conecta_mysql(){
 
 		//Cria conexão com o banco
-		$con = mysqli_connect($this->host,$this->usuario,$this->senhab,$this->database);
+		$con = mysql_connect($this->host,$this->usuario,$this->senhab,$this->database);
 
 		//Ajusta o charset de comunicação entre aplicação e o banco de dados
 		mysqli_set_charset($con,'utf8');
