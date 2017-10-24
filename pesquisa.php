@@ -1,5 +1,5 @@
 <?php
-
+	
   //Verifica se existe algo na variável
   $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 
@@ -148,23 +148,75 @@
               </span>
             </div>
 
+
+
+
+
+ 
             <div class="col-md-8" >
 
 
             	<!-- Anúncios -->
-            	<div class="container container-special" style="margin-top: 30px; padding-top: 30px; padding-left: 10px; background-color: white; width: 600px; height: 200px; color: black;">
+
+            	<div class="panel panel-default" style="margin-top: 30px; color: black;">
+					<div class="panel-heading"><b>Marketplace de patentes</b></div>
+  					<div class="panel-body">
             		<div class="col-md-4" >
             			
             			<!-- AQUI PUXARÁ IMG1 UM PARÊMTRO EM PHP UMA DAS IMAGENS DO ANÚNCIO -->
             			<img src="img/background.jpg" width="100px" height="100px">
             		</div>
+
+
             		<div class="col-md-8" >
             			 <!-- AQUI RECEBERÁ UM PARAMETRO PUXADO PELO BANCO EM PHP -->
             		     <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>	
             		</div>
+				 </div>
 
             	</div>
 
+            	<!-- Anúncios -->
+
+            	<div class="panel panel-default" style="margin-top: 30px; color: black;">
+					<div class="panel-heading"><b>Marketplace de patentes</b></div>
+  					<div class="panel-body">
+            		<div class="col-md-4" >
+            			
+            			<!-- AQUI PUXARÁ IMG1 UM PARÊMTRO EM PHP UMA DAS IMAGENS DO ANÚNCIO -->
+            			<img src="img/background.jpg" width="100px" height="100px">
+            		</div>
+
+
+            		<div class="col-md-8" >
+            			 <!-- AQUI RECEBERÁ UM PARAMETRO PUXADO PELO BANCO EM PHP -->
+            		     <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>	
+            		</div>
+				 </div>
+
+            	</div>
+
+            	<!-- Anúncios -->
+
+            	<div class="panel panel-default" style="margin-top: 30px; color: black;">
+					<div class="panel-heading"><b>Marketplace de patentes</b></div>
+  					<div class="panel-body">
+            		<div class="col-md-4" >
+            			
+            			<!-- AQUI PUXARÁ IMG1 UM PARÊMTRO EM PHP UMA DAS IMAGENS DO ANÚNCIO -->
+            			<img src="img/background.jpg" width="100px" height="100px">
+            		</div>
+
+
+            		<div class="col-md-8" >
+            			 <!-- AQUI RECEBERÁ UM PARAMETRO PUXADO PELO BANCO EM PHP -->
+            		     <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>	
+            		</div>
+				 </div>
+
+            	</div>
+            	            	            	
+           </div>
       </section>
       <!-- CONTEÚDO -->
 
