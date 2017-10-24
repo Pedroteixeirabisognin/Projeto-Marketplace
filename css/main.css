@@ -79,8 +79,16 @@ body{
 	color: black;
 
 }
+.teste-borda{
 
+	border: 2px solid red;
+}
+.container-special{
+	margin-top: 30px;
+	padding-top: 100px; 
+	background-color: white; 
+	width: 600px; 
+	height: 200px; 
+	color: black;
 
-
-
-
+}

@@ -29,7 +29,9 @@
 		
 		$dados_conta = mysqli_fetch_array($resultado_id);
 		if (isset($dados_conta['login'])) {
+			
 			echo "Usuário Logado!";
+
 		}else{
 
 			header('Location: ../../index.php?erro=1');
@@ -38,7 +40,9 @@
 
 	}
 	else{
+
 		echo "Login inválido";
+	
 	}
 
 

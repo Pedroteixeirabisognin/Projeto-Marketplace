@@ -116,66 +116,69 @@
       </div>
   <!--/TELA CADASTRO-->
     <!-- Main jumbotron for a primary marketing message or call to action -->
-
-      <section id="pesquisa">
-        <div class="container">
+            
+      <!--Filtro-->
+      <section id="pesquisa" >
+        <div class="container" >
           <div class="row">
-            <div class="col-md-12" >
+            <div class="col-md-4" >
 
               <span>
-              <h2 align="center" style="padding-top: 100px; padding-bottom: 40px;">Encontre, inove, compre e venda!</h2>
+                <h2 align="center" style="padding-top: 100px; padding-bottom: 40px;">Filtro</h2>
               </span>
               <span>
-                <form name="frmBusca" method="post" action="pesquisa.php" style="padding-bottom: 300px;" >
-                <input  type="text" class="form-control pesquisa" placeholder="Pesquise" name="palavra">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputText">Patente</label>
+                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp" placeholder="Insira nome ou número da patente">
+                    
+                  </div>
+                  <div>
+                    <label for="exampleSelect1">Area</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Domésticos</option>
+                      <option>Automotivos</option>
+                      <option>Barcos</option>
+                      <option>Brinquedos</option>
+                      <option>Lazer</option>
+                    </select>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Buscar</button>
                 </form>
               </span>
             </div>
-          </div>
-        </div>
+
+            <div class="col-md-8" >
+
+
+            	<!-- Anúncios -->
+            	<div class="container container-special" style="margin-top: 30px; padding-top: 30px; padding-left: 10px; background-color: white; width: 600px; height: 200px; color: black;">
+            		<div class="col-md-4" >
+            			
+            			<!-- AQUI PUXARÁ IMG1 UM PARÊMTRO EM PHP UMA DAS IMAGENS DO ANÚNCIO -->
+            			<img src="img/background.jpg" width="100px" height="100px">
+            		</div>
+            		<div class="col-md-8" >
+            			 <!-- AQUI RECEBERÁ UM PARAMETRO PUXADO PELO BANCO EM PHP -->
+            		     <p>Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>	
+            		</div>
+
+            	</div>
+
       </section>
       <!-- CONTEÚDO -->
-      <section id="servicos">
-        <div class="container">
-          <div class="row">
 
-            <!--Imagem-->
-            <div class="col-md-6" >
-              <img class="img-responsive" src="img/light-bulb-icon_34400.png">
-            </div>
-
-            <!--Texto-->
-            <div class="col-md-6" ">
-              <span>
-                <h2>O que é o Invector?</h2>
-                <p>Um site onde você poderá divulgar suas patentes para qualquer investidor interessado.</p>
-              </span>
-              <br>
-              <span>
-                <h2>Coloque suas ideias a venda!</h2>
-                <p>Divulgue sua ideia patenteada, investidores poderão gostar e entrar em contato com você.</p>
-              </span>
-              <br>
-              <span>
-                <h2>Você escolhe o tipo de negociação</h2>
-                <p>Você escolhe a melhor forma de se comunicar com a pessoa, basta colocar em sua descrição.</p>
-              </span>
-            </div>
-          </div>
-
-        </div>
-      </section>
       <footer id="rodape">
         <div class="container">
           <div class="row">
 
             <!--Imagem Rodapé-->           
-            <div class="col-md-4" >
+            <div class="col-md-4 " >
              <img class="img-responsive" src="img/light-bulb-icon_34400.png">
             </div>
 
             <!--Texto-->
-            <div class="col-md-8" >
+            <div class="col-md-8 teste-borda" >
               <div class="col-md-6" style="padding-top: 100px;">
 
                 <h2>Sobre a empresa</h2>
