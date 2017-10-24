@@ -1,0 +1,11 @@
+cadastro_anuncio = tela de cadastro de anuncios
+
+pesquisa = mostra os anuncios
+
+opção_anuncio = editar excluir anuncio
+
+index = tela inicial
+
+anuncio = mostra as informações do anuncio mais detalhadas
+
+cadastro = cadastra as outras informações do login
