@@ -37,7 +37,11 @@
                 padding-bottom: 20px;
             }
         </style>
-
+        <script>
+          function limitarInput(obj) {
+            obj.value = obj.value.substring(0,20); //Aqui eu pego o valor e só deixo o os 20 primeiros caracteres de valor no input
+          }
+        </script>
 
         
 
@@ -113,7 +117,7 @@
                 <form action="php/dao/dao_conta_cadastro.php" method="post">
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nome</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" required placeholder="Nome" name="login">
+                    <input type="text" class="form-control" id="exampleInputPassword1" required placeholder="Nome" name="login" onkeyup="limitarInput(this);">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
