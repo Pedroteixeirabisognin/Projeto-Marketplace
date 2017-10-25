@@ -21,11 +21,11 @@
  
  		if(mysqli_query($link,$query)){
  
- 			echo "Usuário registrado com sucesso!";
+			header('Location: ../../index.php?erro=2');
  		}
  		else{
  
- 			echo "Falha ao registrar o usuário!";
+			header('Location: ../../index.php?erro=3');
  		}
  	}
  

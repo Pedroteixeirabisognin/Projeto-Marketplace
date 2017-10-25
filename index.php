@@ -79,9 +79,14 @@
             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Cadastre-se</button>
             <?php
               if ($erro == 1) {
-                echo "Usuário ou senha inválido(s)";
+                echo 'Usuário ou senha inválido(s)';
               }
-
+              if ($erro == 2) {
+                echo '<span style="color: green;">Usuário cadastrado com sucesso!</span>';
+              }
+              if ($erro == 3) {
+                echo '<span style="color: red;">Erro ao cadastrar usuário!</span>';
+              }
             ?>
           </form>
         </div><!--/.navbar-collapse -->
