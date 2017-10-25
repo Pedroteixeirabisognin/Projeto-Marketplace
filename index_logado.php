@@ -1,5 +1,6 @@
 <?php
 
+  session_start();
   //Verifica se existe algo na variável
   $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 
@@ -60,30 +61,14 @@
           <a class="navbar-brand" href="index.html">Invector</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form method="post" action="php/dao/verificar_login.php" class="navbar-form navbar-right" role="form">
             
-            <!--FORM DE LOGIN--> 
-            <div class="form-group">
-              <input type="text" placeholder="Login" class="form-control" required id="campo_login"  name="login_verifica">
-            </div>
+          <div class="container" style="margin-top: 10px; padding-left: 800px;">
             
-            <!--FORM DE SENHA-->            
-            <div class="form-group">
-              <input type="password" placeholder="Password" required class="form-control"  placeholder="Password" id="campo_senha"  name="senha_verifica">
-            </div>
-
-            <!--BOTÃO DE SUBMIT-->
-            <button type="submit" class="btn btn-success" id="login_botao">Logar</button>
-           
-            <!--~BOTÃO DE JANELA CADASTRO-->
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Cadastre-se</button>
-            <?php
-              if ($erro == 1) {
-                echo "Usuário ou senha inválido(s)";
-              }
-
+            <?php 
+            echo $_SESSION['login'];
             ?>
-          </form>
+          </div>
+          
         </div><!--/.navbar-collapse -->
       </div>
     </nav>

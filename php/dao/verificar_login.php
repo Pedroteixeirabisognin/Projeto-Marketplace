@@ -1,7 +1,10 @@
 <?php
-
+	
+	session_start();
+	
 	include_once("../controler/conexao.php"); 
 	include_once("../model/conta.php"); 
+
 
   	$login = $_POST['login_verifica']; 
   	$senha = $_POST['senha_verifica']; 
@@ -32,6 +35,8 @@
 			
 			echo "Usuário Logado!";
 
+			$_SESSION['login'] = $dados_conta['login'];
+			header('Location: ../../index_logado.php');
 		}else{
 
 			header('Location: ../../index.php?erro=1');
